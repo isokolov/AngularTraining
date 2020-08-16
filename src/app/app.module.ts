@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { PostComponent } from './post/post.component';
 import {Post4Component} from './post4/post4.component';
+import {FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -12,7 +13,7 @@ import {Post4Component} from './post4/post4.component';
     Post4Component
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,7 +1,24 @@
+<h1>Hello Angular World!</h1>
+
+<!-- event binding html to ts by triggering an event by html -->
+<button (click)="onClick()">Click me!</button>
+<input
+  type="text"
+  (keyup.enter)="onInput($event)"
+  (blur)="onBlur(myInput.value)"
+  #myInput
+>
+<p><strong>{{inputValue}}</strong></p>
+<hr/>
+<!-- 2 way binding. Must add FormsModule-->
+<input type="text" [(ngModel)]="title">
+<p>{{ title }}</p>
+
+<hr/>
 <app-post></app-post>
 <hr/>
-
-<!-- one side binding html to typescript -->
-<img [src]="img" alt="">
-<hr/>
 <app-post4></app-post4>
+
+<!-- one side binding html to typescript >
+<img [src]="img" alt=""-->
+
